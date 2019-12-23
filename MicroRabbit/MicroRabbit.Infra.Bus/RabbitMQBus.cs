@@ -17,7 +17,7 @@ namespace MicroRabbit.Infra.Bus
     {
         private readonly IMediator _mediator;
         private readonly Dictionary<string, List<Type>> _handlers;
-        public readonly List<Type> _eventTypes;
+        private readonly List<Type> _eventTypes;
 
         public RabbitMQBus(IMediator mediator)
         {
